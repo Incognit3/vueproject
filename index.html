@@ -4,29 +4,16 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
+  <div id="app">
+   <input type="text" v-model="paradiseOne" v-bind:class="autz()">
+   <input type="text" v-model="nortsideTwo" v-bind:class="autz2()">
+   <p v-bind:class="colbigo()">Результат{{total()}}</p>
+ </div>
 
-<form id="main" v-cloak>
-
-    <div class="bar">
-        <!-- Создает связь мужду моделью searchString model и текстовым полем -->
-
-        <input type="text" v-model="searchString" placeholder="Введите название статьи" />
-    </div>
-
-    <ul>
-        <!-- Рендерится li под каждый элемент массива filteredArticles. -->
-             
-        <li v-for="article in filteredArticles">
-            <a v-bind:href="article.url"><img v-bind:src="article.image" /></a>
-            <p>{{article.title}}</p>
-        </li>
-    </ul>
-
-</form>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.5/vue.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="js/script.js"></script>
 
 </body>
