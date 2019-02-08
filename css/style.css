@@ -1,11 +1,21 @@
-.red {
-    border: 2px solid red; }
+[v-cloak] {
+  display: none; }
 
-.green {
-    border: 2px solid green; }
+* {
+    margin:0;
+    padding:0; }
 
-.grintxt {
-    color: green; }
+body {
+    font:15px/1.3 'Open Sans', sans-serif;
+    color: #5e5b64;
+    text-align: center; }
 
-.redtxt {
-    color: red; }
+a, a:visited {
+    outline: none;
+    color: #389dc1; }
+
+a:hover {
+    text-decoration: none; }
+
+section, footer, header, aside, nav {
+    display: block; }

@@ -1,36 +1,40 @@
-var app = new Vue({
-    el: '#app',
-    data: { paradiseOne: 0,
-            nortsideTwo: 0
-           
+  var app = new Vue({
+        el: '#app',
+        data: {
+            pegers: '',
+            numbers: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
         },
         methods: {
-        autz: function() {
-             if (parseInt(this.paradiseOne) > 0) return "green";
-             if (parseInt(this.paradiseOne) < 0) return "red";
-              
-        },
+            checkInfo: function() {    
+                console.log(this.pegers);
+                    if (this.numbers.indexOf(this.pegers) == -1) {
+                        this.numbers.indexOf(this.pegers);
+                        this.numbers.push(this.pegers); }
+                    
+                    else {
+                    console.log(false); 
 
-         autz2: function() {
-             if (parseInt(this.nortsideTwo) > 0) return "green";
-             if (parseInt(this.nortsideTwo) < 0) return "red";
-              
-        },
-        total:function() {
-            
-            return parseInt(this.paradiseOne)+parseInt(this.nortsideTwo);
-        },
-        colbigo:function(){
-            console.log(this.tot);
-            if(parseInt(this.paradiseOne)+parseInt(this.nortsideTwo)>0) return "grintxt";
-            if(parseInt(this.paradiseOne)+parseInt(this.nortsideTwo)<0) return "redtxt";
+            }
         }
-
-        
     }
+})
 
-});
-
-
+var app = new Vue({
+    el: '#appTwo',
+    data: {
+        login: '',
+        password: '',
+        date: '',
+        age: 22,
+        email: ''
        
-   
+    },
+    
+    methods: {
+        loginInfo:function() {
+
+            // # code...
+        
+        }
+    }
+});
