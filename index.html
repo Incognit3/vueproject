@@ -7,42 +7,35 @@
 </head>
 <body>
 
-</div>
-<div id="app">
-	<p>
-	  <input type="text" v-model="pegers"/>
-	  <button v-on:click="checkInfo">Добавить</button>
-	</p>
-	<ul>
-	   <li v-for="(numbers, index) in numbers">
-	     <p> {{ numbers }} </p>
-	</ul>
+<!-- <div id="app">
+	<counter></counter>
+	<counter></counter>
+
 </div>
 <br>
-<div id="appTwo" class="col-md-4">
-    <label> Логин: </label>
-    	<input type="text" v-model="login" placeholder="Введите логин" class="form-control" /><br>
-    	<label> Почтовый ящик: </label>
-    	<input type="password" v-model="password" placeholder="Введите почту" class="form-control" /><br>
-    	<label> Возраст: </label>
-    	<input type="number" v-model="age" min="18" placeholder="Введите возраст" class="form-control" /><br>
-    	<label> Дата регистрации: </label><br>
-    	<input type="date" v-model="date" placeholder="Введите дату" class="form-control" />
-    <br>
-    <br>
-    <div>
-        <h3> Введенная информация </h3>
-        <p> Логин: {{login}} </p>
-        <p> Почта: {{email}} </p>
-        <p> Возраст: {{age}} </p>
-        <p> Дата регистрации: {{date}} </p>
-    </div>
+<div id="app1">
+    <section-header></section-header>
+    <section-content></section-content>
+    <section-footer></section-footer>
+</div>
+<hr/>
+<div id="app2">
+    <section-header></section-header>
+    <section-content></section-content>
+</div>
+<br>
+<div id="app3">
+    <counter></counter>
+    <counter></counter>
+</div> -->
+
+<div id="app4">
+	<counter></counter>
 </div>
 
 <script src="js/vue.js"></script>
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.5/vue.min.js"></script>
-<script src="https://unpkg.com/vue"></script> -->
 <script src="js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.5/vue.min.js"></script>
 
 </body>
 </html>
